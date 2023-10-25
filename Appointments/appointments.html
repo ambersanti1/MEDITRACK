@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./Assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Gabarito&family=Manjari&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Young+Serif&display=swap"
       rel="stylesheet">
     <title>MEDITRACK APPOINTMENTS</title>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./Appointment_Assets/style.css" />
   </head>
 
-  <body>
     <header>
       <h1>MEDITRACK</h1>
     </header>
@@ -28,10 +30,22 @@
         <div id="appointment-description">
           <h3>APPOINTMENT NAME</h3>
           <h4>Appointment Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-         <img src="#" alt="Google Maps Location"/>
+    
+        <div id="map">map</div>
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo
+            &q=Space+Needle,Seattle+WA">
+        </iframe>        
         </div>
       </section>
     </main>
+    <script src="./Appointment_Assets/script.js"></script>
+    <script type="module" src="./Appointment_Assets/index.js"></script>
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+        ({ key: "AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo", v: "weekly" });</script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo&callback=initMap">
+    </script>
   </body>
 
 </html>
