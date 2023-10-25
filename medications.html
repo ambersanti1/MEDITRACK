@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/search-box.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/cards.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Manjari&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Young+Serif&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <title>MEDITRACK MEDICATIONS</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>MEDITRACK</h1>
+    </header>
+
+    <main>
+      <section class="appointment-title-section">
+        <h2 id="username">Hello, Carolina!</h2>
+        <h2 id="currentDay"></h2>
+        <h2 id="appointment-title">MEDICATIONS</h2>
+      </section>
+    
+    <!-- ADD BUTTON -->
+        <button onclick= "hideShow()" type = "button" class = "button" id = "add-medicine">
+          <span class="button__text">Add medicine</span>
+          <span class="button__icon">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </span>
+        </button>
+    </main>
+
+
+<!-- MEDICATION FORM & TREATMENT CARD -->
+    
+    <div class="grid-layout">
+
+      <!-- MEDICATION FORM -->
+
+      <div id="medication-form" class = "medication-form">
+        <div class="container">
+          <div class="title">Medicine registration</div>
+          <form>
+            <div class="user-details">
+
+              <div class="input-box">
+                <label class="details">Medicine name</label>
+                <input type="text" placeholder="Enter medicine name" name="medicine-name">
+              </div>
+
+              <div class="input-box">
+                <label class="details">Treatment start hour</label>
+                <input type="text" placeholder="Enter medicine name" name="start-hour">
+              </div>
+
+              <div class="input-box">
+                <label class="details">Treatment start date</label>
+                <input type="text" placeholder="Enter medicine name" name= "start-date">
+              </div>
+
+              <div class="input-box">
+                <label class="details">Time frequency</label>
+                <input type="text" placeholder="Enter medicine name" name="frequency">
+              </div>
+
+              <div class="input-box">
+                <label class="details">Treatment duration</label>
+                <input type="text" placeholder="Enter medicine name" name="duration">
+              </div>
+
+              <button type = "submit" class = "button">
+                <span class="button__text">Submit</span>
+                <span class="button__icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- TREATMENT CARDS -->
+
+      <div class="container-card">
+        <div class="course">
+          <div class="preview">
+            <h6>Day</h6>
+            <h2>HOUR</h2>
+          </div>
+          <div class="info">
+            <div class="progress-wrapper">
+              <div class="progress"></div>
+              <span class="progress-text">4/9 takes</span>
+            </div>
+            <h6>Chapter 4</h6>
+            <h2>Aspirine</h2>
+            <p class="p-trunc">Disease or discomfort</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script>
+
+
+    </script>
+
+    <!-- SCRIPT LINKS -->
+
+    <!-- ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- CURRENT DAY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src = "js/script.js"></script>
+
+  </body>
+
+</html>
+
+
+              <!-- <div class="box">
+                <label class="details">Medicine name</label>
+                <div class="search-box">
+                  <input type="text" placeholder = "Search for medicine" required>
+                  <label for="" class="icon">
+                    <i class="fas fa-search"></i>
+                  </label>
+                </div>
+              </div> -->

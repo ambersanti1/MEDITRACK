@@ -1,0 +1,36 @@
+.button{
+  margin-top: 10px;
+  margin-left: 70px;
+  display: inline-flex;
+  height: 50px;
+  padding: 0;
+  background: darkcyan;
+  color: white;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  overflow:hidden;
+  font-family: 'nunito sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor:pointer;
+}
+
+.button:hover{
+  background: lightblue;
+  color: #3f4a4e;
+  font-weight: 500;
+}
+
+.button__text,
+.button__icon{
+  display:inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  height:100%
+}
+
+.button__icon{
+  font-size: 1.5em;
+  background: rgba(0,0,0,0.08);
+}
