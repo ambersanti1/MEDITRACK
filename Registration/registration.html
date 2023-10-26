@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/autocomplete-med.css">
+    <link rel="stylesheet" href="./assets/css/button-med.css">
+    <link rel="stylesheet" href="./assets/css/cards-med.css">
+    <link rel="stylesheet" href="./assets/css/form-med.css">
+    <link rel="stylesheet" href="./assets/css/style copy.css">
+    <link rel="stylesheet" href="./assets/css/search-box.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Manjari&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Young+Serif&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <title>MEDITRACK REGISTRATION</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>MEDITRACK</h1>
+    </header>
+
+
+
+    <main>
+      <section class="appointment-title-section">
+        <h2 id="currentDay"></h2>
+        <h2 id="appointment-title">REGISTRATION</h2>
+      </section>
+
+      <div class="">
+        <div class="">
+          <div class="header">
+            <h4 id="introtext">Please type in your details and select your option</h4>
+          </div>
+    
+
+      <div id="medication-form" class = "medication-form">
+        <div class="container">
+          <div class="title">Treatment registration</div>
+          <form>
+            <div class="user-details">
+
+              <div class="input-box">
+                <label class="details">Patient ID</label>
+                <input type="text" placeholder="Type your Patient ID" name="patient-id">
+              </div>
+
+              <div class="input-box">
+                <label class="details">First Name</label>
+                <input type="text" placeholder="Type in your First Name" name="fisrt-name">
+              </div>
+
+              <div class="input-box">
+                <label class="details">Last Name</label>
+                <input type="text" placeholder="Type in your Last Name" name= "last-name">
+              </div>
+
+              <div class="input-box">
+                  <label for="last_name">Date of Birth</label>
+                  <input type="date" name="last_name" placeholder="Date" />     
+                </div>
+
+                <div class="full-width">
+                  <div class="">
+                    <label for="first_name">Select Option</label>
+                  </div>
+                  <div>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Appointment
+                    </label></div>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox2" value="option2" checked> Medication
+                    </label>
+                  </div>
+                </div>
+
+              <button type = "submit" class = "button">
+                <span class="button__text">Submit</span>
+                <span class="button__icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
