@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/search-box.css">
-    <link rel="stylesheet" href="./css/button.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/button-med.css">
+    <link rel="stylesheet" href="./css/form-med.css">
+    <link rel="stylesheet" href="./css/cards-med.css">
+    <link rel="stylesheet" href="./css/autocomplete-med.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,30 +50,30 @@
 
       <!-- MEDICATION FORM -->
 
-      <div id="medication-form" class = "medication-form">
+      <div id="medication-form" class = "medication-form hide">
         <div class="container">
           <div class="title">Medicine registration</div>
-          <form id = "formulario">
+          <form id = "formulario" autocomplete="off">
             <div class="user-details">
 
-              <div class="input-box">
+              <div class="autocomplete" style = "width: 300px">
                 <label class="details">Medicine name</label>
-                <input type="text" placeholder="Enter medicine name" id="medicine-name">
+                <input type="text" placeholder="Type in medicine name" id="myInput" name = "myCountry" class="medicine-name">
               </div>
 
               <div class="input-box">
                 <label class="details">Disease or discomfort</label>
-                <input type="text" placeholder="Enter disease or discomfort" id="disease">
+                <input type="text" placeholder="Type in disease or discomfort" id="disease">
               </div>
 
               <div class="input-box">
                 <label class="details">Treatment start hour</label>
-                <input type="time" placeholder="Enter medicine name" id="start-hour">
+                <input type="time" id="start-hour">
               </div>
 
               <div class="input-box">
                 <label class="details">Treatment start date</label>
-                <input type="date" placeholder="Enter medicine name" id= "start-date">
+                <input type="date" id= "start-date">
               </div>
 
               <div class="input-box">
@@ -101,9 +102,6 @@
         <div class="container-card"></div>
       </div>
 
-    </div>
-
-
     <!-- SCRIPT LINKS -->
 
     <!-- ICON -->
@@ -116,7 +114,7 @@
 
     <!-- JAVASCRIPT -->
     <script src = "js/medications.js"></script>
-    <script src = "js/api-medicine.js"></script>
+    <script src = "js/api-medication.js"></script>
 
   </body>
 
