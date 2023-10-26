@@ -38,7 +38,7 @@
      
       <!-- ADD BUTTON -->
      
-      <button onclick="hideShow()" type="button" class="button" id="add-appointment">
+      <button type="button" class="button" id="bttn">
         <span class="button__text">Add Appointment</span>
         <span class="button__icon">
           <ion-icon name="add-circle-outline"></ion-icon>
@@ -46,8 +46,8 @@
       </button>
 
     </main>
-
-      <section class="appointment1">
+    
+      <section class="appointment1" id="appointmentOne">
         <div class="container-card">
          <div class="course">
             <div class="preview">
@@ -55,9 +55,16 @@
              <h2>HOUR</h2>
            </div>
            <div class="info">
-             <h6>APPOINTMENT DETAILS:</h6>
-             <h2>Flu Shot Appointment</h2>
-             <input id="autocomplete" placeholder="Enter a place" type="text" />
+             <h6>NEW APPOINTMENT:</h6>
+             <!-- <h2>Flu Shot Appointment</h2> -->
+             <h2 class="output" id="output1"></h2>
+             <input id="newAppointment" placeholder="Enter new appointment..." type="text"/>
+              
+              <button type="button" class="submitButton" id="submitBttn">
+                <span class="button__text">Submit</span>
+              </button>
+
+             <input id="autocomplete" placeholder="Type here..." type="text" />
              <p class="p-trunc">Yearly flu shot procedure</p>
            </div>
            <div id="map">
@@ -91,10 +98,7 @@
         </div>
       </section>
 
-
-
-
-
+      <footer>footer</footer>
 
 
 
