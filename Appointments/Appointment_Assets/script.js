@@ -31,11 +31,6 @@ const out1 = document.getElementById('output1');
 const out2 = document.getElementById('output2');
 const out3 = document.getElementById('output3');
 
-google.maps.event.addListener(autocomplete,'place-changed',() => {
-  let place = autocomplete.getPlace()
-  console.log(place)
-});
-
 
 function newAppointment() {
   out1.innerHTML = txt1.value;
