@@ -1,12 +1,12 @@
-const date = new Date()
-console.log(date)
+$(document).ready(function () {
 
-let day = date.getDate()
-console.log(day)
+// CURRENT DATE
 
-let month = date.getMonth() + 1
-console.log(month)
+var todaysDate = document.querySelector("#current-date");
+var time = dayjs().format("dddd, MMMM D, YYYY");
 
-let year = date.getFullYear()
-console.log(year)
+todaysDate.textContent = ('Date: ' + time);
+
+});
+
 
