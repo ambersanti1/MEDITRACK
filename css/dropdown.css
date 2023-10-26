@@ -1,0 +1,38 @@
+ul{
+  list-style: none;
+  background: darkcyan;
+}
+
+ul li{
+  display: inline-block;
+  position: relative;
+}
+
+ul li a{
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+
+}
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background: darkcyan;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover{
+  background: #112C66;
+}
+
+ul li:hover ul.dropdown {
+  display:block;
+}
