@@ -100,7 +100,8 @@ footer {
   border-color: black;
 }
 
-#autocomplete {
+#appointmentDay {
+  margin-top: 25px;
   margin-bottom: 15px;
   width: 75%;
   display: block;
@@ -115,6 +116,50 @@ footer {
   font-size: 16px;
   border-bottom-width: 2px;
   border-color: black;
+}
+
+#appointmentHour {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 75%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+
+#autocomplete {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 75%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+
+#output1 {
+  font-size: 30pt;
+}
+
+#appTitle2 {
+  font-size: 30pt;
 }
 
 
@@ -135,6 +180,7 @@ footer {
 .container-card{
   margin: auto;
 }
+
 .grid-layout{
   display: grid;
   grid-template-columns: auto auto;
@@ -180,6 +226,22 @@ footer {
 
 .preview h2{
   padding-left: 0;
+}
+
+.preview2{
+  background: grey;
+  color: #fff;
+  padding: 35px;
+  width: 250px;
+  position: relative;
+}
+
+.preview2 h2 {
+  padding-left: 0;
+}
+
+.preview2 h6 {
+  font-size: 20px;
 }
 
 .info{
@@ -231,6 +293,7 @@ footer {
   letter-spacing: 1px;
 
 }
+
 .info p{
   font-size: 12px;
   font-weight: bold;

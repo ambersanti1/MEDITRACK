@@ -21,14 +21,26 @@ $(document).ready(function() {
 });
 
 
-// ENTER NEW APPOINTMENT
+// ENTER NEW APPOINTMENT NAME, DATE, HOUR, LOCATION
 
 const txt1 = document.getElementById('newAppointment');
+const txt2 = document.getElementById('appointmentDay');
+const txt3 = document.getElementById('appointmentHour')
 const btn1 = document.getElementById('submitBttn');
 const out1 = document.getElementById('output1');
+const out2 = document.getElementById('output2');
+const out3 = document.getElementById('output3');
+
+google.maps.event.addListener(autocomplete,'place-changed',() => {
+  let place = autocomplete.getPlace()
+  console.log(place)
+});
+
 
 function newAppointment() {
   out1.innerHTML = txt1.value;
+  out2.innerHTML = txt2.value;
+  out3.innerHTML = txt3.value;
 }
 
 btn1.addEventListener('click',newAppointment);

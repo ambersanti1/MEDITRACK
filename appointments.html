@@ -50,42 +50,47 @@
       <section class="appointment1" id="appointmentOne">
         <div class="container-card">
          <div class="course">
-            <div class="preview">
-             <h6>Day</h6>
-             <h2>HOUR</h2>
+            
+            <div class="preview2">
+             <h6 class="output" id="output2"></h6>
+             <h2 class ="output" id="output3"></h2>
            </div>
-           <div class="info">
+
+            <div class="info">
              <h6>NEW APPOINTMENT:</h6>
-             <!-- <h2>Flu Shot Appointment</h2> -->
              <h2 class="output" id="output1"></h2>
-             <input id="newAppointment" placeholder="Enter new appointment..." type="text"/>
+             <input id="newAppointment" placeholder="Appoitnment..." type="text"/>
+             <input id="appointmentDay" placeholder="Day..." type="text"/>
+             <input id="appointmentHour" placeholder="Hour..." type="text"/>
+             <input id="autocomplete" placeholder="Type here..." type="text" />
               
               <button type="button" class="submitButton" id="submitBttn">
                 <span class="button__text">Submit</span>
               </button>
+            
+            </div>
 
-             <input id="autocomplete" placeholder="Type here..." type="text" />
-             <p class="p-trunc">Yearly flu shot procedure</p>
-           </div>
            <div id="map">
             <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
               referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo&q=Hospital+Zambrano+Hellion+TecSalud,San+Pedro+Garza+García+N.L.">
             </iframe>
            </div>
+
          </div>
         </div>
+        
       </section>
 
       <section class="appointment2">
         <div class="container-card">
           <div class="course">
             <div class="preview">
-              <h6>Day</h6>
-              <h2>HOUR</h2>
+              <h6>Nov. 6</h6>
+              <h2>5:00 p.m.</h2>
             </div>
             <div class="info">
               <h6>APPOINTMENT DETAILS:</h6>
-              <h2>Flu Shot Appointment</h2>
+              <h2 id="appTitle2">Flu Shot Appointment</h2>
               <p class="p-trunc">Yearly flu shot procedure</p>
             </div>
             <div id="map">
