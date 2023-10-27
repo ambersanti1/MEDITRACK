@@ -1,5 +1,5 @@
 var today = dayjs();
-$('#currentDay').text(today.format('MMMM D, YYYY'));
+$('#currentDay').text(today.format("dddd, MMMM D, YYYY"));
 
 //Scrollable menu
 

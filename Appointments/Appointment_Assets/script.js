@@ -5,7 +5,7 @@ $(document).ready(function () {
 var todaysDate = document.querySelector("#current-date");
 var time = dayjs().format("dddd, MMMM D, YYYY");
 
-todaysDate.textContent = ('Date: ' + time);
+todaysDate.textContent = (time);
 
 });
 

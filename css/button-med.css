@@ -1,3 +1,7 @@
+.button__text{
+  text-decoration: none;
+  color: white;
+}
 .button{
   margin-top: 10px;
   margin-left: 70px;
