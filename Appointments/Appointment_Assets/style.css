@@ -32,6 +32,12 @@ h4 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+footer {
+    height: 100px;
+    background: #eee;
+    opacity: 0%;
+}
+
 .appointment-title-section {
   margin-top: 100px;
   margin-bottom: 20px;
@@ -77,6 +83,85 @@ h4 {
   font-size: 10pt;
 }
 
+#newAppointment {
+  margin-bottom: 15px;
+  width: 75%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+
+#appointmentDay {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 75%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+
+#appointmentHour {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 75%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+
+#autocomplete {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 75%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+
+#output1 {
+  font-size: 30pt;
+}
+
+#appTitle2 {
+  font-size: 30pt;
+}
+
 
 /* PERSONALIZED CARD CSS */
 
@@ -89,18 +174,18 @@ h4 {
 .appointment2 {
   padding-left: 70px;
   padding-top: 70px;
-  margin-bottom: 200px;
+  margin-bottom: 75px;
 }
 
 .container-card{
   margin: auto;
 }
+
 .grid-layout{
   display: grid;
   grid-template-columns: auto auto;
   margin:10px;
 }
-
 
 .course{
   background: #fff;
@@ -143,12 +228,27 @@ h4 {
   padding-left: 0;
 }
 
+.preview2{
+  background: grey;
+  color: #fff;
+  padding: 35px;
+  width: 250px;
+  position: relative;
+}
+
+.preview2 h2 {
+  padding-left: 0;
+}
+
+.preview2 h6 {
+  font-size: 20px;
+}
+
 .info{
   padding: 50px;
   position: relative;
   width: 100%;
 }
-
 
 .info h2{
   padding-left: 0;
@@ -193,6 +293,7 @@ h4 {
   letter-spacing: 1px;
 
 }
+
 .info p{
   font-size: 12px;
   font-weight: bold;
@@ -220,8 +321,24 @@ h4 {
   }
 }
 
-
-
+.submitButton{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  display: inline-flex;
+  height: 30px;
+  padding: 0;
+  background: darkcyan;
+  color: white;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  overflow:hidden;
+  font-family: 'nunito sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor:pointer;
+}
 
 /* GOOGLE MAPS API CSS */
 /* 

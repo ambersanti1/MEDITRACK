@@ -43,7 +43,7 @@
      
       <!-- ADD BUTTON -->
      
-      <button onclick="hideShow()" type="button" class="button" id="add-appointment">
+      <button type="button" class="button" id="bttn">
         <span class="button__text">Add Appointment</span>
         <span class="button__icon">
           <ion-icon name="add-circle-outline"></ion-icon>
@@ -51,55 +51,64 @@
       </button>
 
     </main>
-
-      <section class="appointment1">
+    
+      <section class="appointment1" id="appointmentOne">
         <div class="container-card">
          <div class="course">
-            <div class="preview">
-             <h6>Day</h6>
-             <h2>HOUR</h2>
+            
+            <div class="preview2">
+             <h6 class="output" id="output2"></h6>
+             <h2 class ="output" id="output3"></h2>
            </div>
-           <div class="info">
-             <h6>APPOINTMENT DETAILS:</h6>
-             <h2>Flu Shot Appointment</h2>
-             <input id="autocomplete" placeholder="Enter a place" type="text" />
-             <p class="p-trunc">Yearly flu shot procedure</p>
-           </div>
+
+            <div class="info">
+             <h6>NEW APPOINTMENT:</h6>
+             <h2 class="output" id="output1"></h2>
+             <input id="newAppointment" placeholder="Appoitnment..." type="text"/>
+             <input id="appointmentDay" placeholder="Day..." type="text"/>
+             <input id="appointmentHour" placeholder="Hour..." type="text"/>
+             <input id="autocomplete" placeholder="Type here..." type="text" />
+              
+              <button type="button" class="submitButton" id="submitBttn">
+                <span class="button__text">Submit</span>
+              </button>
+            
+            </div>
+
            <div id="map">
             <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
               referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo&q=Hospital+Zambrano+Hellion+TecSalud,San+Pedro+Garza+García+N.L.">
             </iframe>
            </div>
+
          </div>
         </div>
+        
       </section>
 
       <section class="appointment2">
         <div class="container-card">
           <div class="course">
             <div class="preview">
-              <h6>Day</h6>
-              <h2>HOUR</h2>
+              <h6>Nov. 6</h6>
+              <h2>5:00 p.m.</h2>
             </div>
             <div class="info">
               <h6>APPOINTMENT DETAILS:</h6>
-              <h2>Flu Shot Appointment</h2>
+              <h2 id="appTitle2">Flu Shot Appointment</h2>
               <p class="p-trunc">Yearly flu shot procedure</p>
             </div>
             <div id="map">
               <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo&q=Hospital+Zambrano+Hellion+TecSalud,San+Pedro+Garza+García+N.L.">
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYa-mEYPqjdgNIA7mSBDAU0BcL_BtVZmo&q=AVE+Medical+Center,Monterrey+N.L.">
               </iframe>
             </div>
           </div>
         </div>
       </section>
 
-
-
-
-
+      <footer>footer</footer>
 
 
 
