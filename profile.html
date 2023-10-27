@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Gabarito&family=Manjari&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Young+Serif&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
     <title>MEDITRACK MEDICATIONS</title>
   </head>
@@ -29,7 +31,7 @@
     <div class="dropdownmenu">
       <ul>
         <li><a href="appointments.html">APPOINTMENTS</a></li>
-        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="medications.html">MEDICATIONS</a></li>
       </ul>
     </div>
 
@@ -37,75 +39,34 @@
       <section class="appointment-title-section">
         <h2 id="username">Hello, Carolina!</h2>
         <h2 id="currentDay"></h2>
-        <h2 id="appointment-title">MEDICATIONS</h2>
+        <h2 id="appointment-title">PROFILE</h2>
       </section>
     
-    <!-- ADD BUTTON -->
-      <button onclick= "hideShow()" type = "button" class = "button" id = "add-medicine">
-        <span class="button__text">Add medicine</span>
-        <span class="button__icon">
-          <ion-icon name="add-circle-outline"></ion-icon>
-        </span>
-      </button>
-    </main>
-
-
-<!-- MEDICATION FORM & TREATMENT CARD -->
-    
-    <div class="grid-layout">
-
-      <!-- MEDICATION FORM -->
-
-      <div id="medication-form" class = "medication-form hide">
+      <!-- PROFILE INFORMATION -->
         <div class="container">
-          <div class="title">Medicine registration</div>
-          <form id = "formulario" autocomplete="off">
+          <div class="title">Patient data</div>
             <div class="user-details">
-
-              <div class="autocomplete" style = "width: 300px">
-                <label class="details">Medicine name</label>
-                <input type="text" placeholder="Type in medicine name" id="myInput" name = "myCountry" class="medicine-name">
+                <h4 class="details">Patient ID: </h4>
               </div>
 
               <div class="input-box">
-                <label class="details">Disease or discomfort</label>
-                <input type="text" placeholder="Type in disease or discomfort" id="disease">
+                <h4 class="details">First name: </h4>
               </div>
 
               <div class="input-box">
-                <label class="details">Treatment start hour</label>
-                <input type="time" id="start-hour">
+                <h4 class="details">Last name: </h4>
               </div>
 
               <div class="input-box">
-                <label class="details">Treatment start date</label>
-                <input type="date" id= "start-date">
+                <h4 class="details">Date of birth:</h4>
               </div>
 
               <div class="input-box">
-                <label class="details">Time frequency</label>
-                <input type="number" placeholder="Enter hours" id="frequency">
+                <h4 class="details">Treatment duration</h4>
               </div>
-
-              <div class="input-box">
-                <label class="details">Treatment duration</label>
-                <input type="number" placeholder="Enter days" id="duration">
-              </div>
-
-              <button id = "submit" class = "button">
-                <span class="button__text">Submit</span>
-                <span class="button__icon">
-                  <ion-icon name="add-outline"></ion-icon>
-                </span>
-              </button>
             </div>
           </form>
         </div>
-      </div>
-
-      <!-- TREATMENT CARDS -->
-
-        <div class="container-card"></div>
       </div>
 
     <!-- SCRIPT LINKS -->
