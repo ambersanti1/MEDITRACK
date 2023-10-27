@@ -4,13 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/autocomplete-med.css">
-    <link rel="stylesheet" href="./assets/css/button-med.css">
-    <link rel="stylesheet" href="./assets/css/cards-med.css">
-    <link rel="stylesheet" href="./assets/css/form-med.css">
-    <link rel="stylesheet" href="./assets/css/style copy.css">
-    <link rel="stylesheet" href="./assets/css/search-box.css">
+    <link rel="stylesheet" href="./Registration/css/style.css">
+    <link rel="stylesheet" href="./css/autocomplete-med.css">
+    <link rel="stylesheet" href="./css/button-med.css">
+    <link rel="stylesheet" href="./css/cards-med.css">
+    <link rel="stylesheet" href="./css/form-med.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +27,21 @@
       <h1>MEDITRACK</h1>
     </header>
 
+      <div class="dropdownmenu">
+        <ul>
+          <li><a href="medications.html">MEDICATIONS</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+        </ul>
+      </div>
+      <main>
+       
+
     <main>
       <section class="appointment-title-section">
         <h2 id="currentDay"></h2>
         <h2 id="appointment-title">REGISTRATION</h2>
       </section>
 
-      <div class="">
         <div class="">
           <div class="header">
             <h4 id="introtext">Please type in your details and select your option</h4>
@@ -79,17 +87,13 @@
                   </div>
                 </div>
 
-              <button type = "submit" class = "button">
-                <a href="medications.html"></a>
-                <span class="button__text">Submit</span>
-                <span class="button__icon">
-                  <ion-icon name="add-outline"></ion-icon>
-                </span>
-              </button>
-            </div>
-          </form>
+                <button type = "submit" class = "button">
+                  <span class="button__text"></span><div class="checkbox-inline"><a href="./profile.html">Submit</a></div>
+                  <span class="button__icon">
+                    <ion-icon name="add-outline"></ion-icon>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-
-  </body>
-</html>
